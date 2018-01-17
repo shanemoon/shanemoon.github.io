@@ -41,17 +41,15 @@
         $("#homeHeading").css("opacity", 1.4 - $(window).scrollTop() / 250);
     });
 
+    $(window).scroll(function () {
+        $("#btn-to-gallery").css("opacity", 1.4 - $(window).scrollTop() / 250);
+    });
+
     // scroll-top button
     $('#scroll-top').click(function() {
         $('body,html').animate({
             scrollTop : 0
         }, 500);
-    });
-
-    $('.wiki-heading-close').click(function() {
-        $(this).parent().toggleClass('wiki-heading-content-folded')
-        $(this).toggleClass('fa-plus fa-minus')
-        $(document.getElementById($(this).parent().attr('id')+"c")).toggleClass('folded')
     });
     
     // Initialize and Configure Scroll Reveal Animation

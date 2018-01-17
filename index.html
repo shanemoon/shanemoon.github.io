@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,71 +27,399 @@
     <link href="css/creative.css" rel="stylesheet">
 
     <!-- Favicons -->
+    <!--
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    -->
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- Light Gallery -->
+    <link href="vendor/lightgallery/css/lightgallery.css" rel="stylesheet">
+    <style>
+        @media (max-width: 3000px) {
+            .demo-gallery > ul {
+                margin-bottom: 0;
+                -moz-column-count: 2;
+                -webkit-column-count: 2;
+                column-count: 2;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .demo-gallery > ul {
+                margin-bottom: 0;
+                -moz-column-count: 1;
+                -webkit-column-count: 1;
+                column-count: 1;
+            }
+        }
+
+        .demo-gallery > ul > li {
+            float: left;
+            margin-top: 60px;
+            margin-right: 2.5%;
+            margin-left: 2.5%;
+            width: 95%;
+        }
+        .demo-gallery > ul > li a {
+            border: 0px solid #FFF;
+            border-radius: 0px;
+            display: block;
+            overflow: hidden;
+            position: relative;
+            float: left;
+        }
+        .demo-gallery > ul > li a > img {
+            -webkit-transition: -webkit-transform 0.15s ease 0s;
+            -moz-transition: -moz-transform 0.15s ease 0s;
+            -o-transition: -o-transform 0.15s ease 0s;
+            transition: transform 0.15s ease 0s;
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+            height: auto !important;
+            width: 100% !important;
+        }
+        .demo-gallery > ul > li a:hover > img {
+            -webkit-transform: scale3d(1.1, 1.1, 1.1);
+            transform: scale3d(1.1, 1.1, 1.1);
+        }
+    </style>
 
 </head>
 
 <body id="page-top">
 
+    <!-- Header -->
     <header id="main-header">
         <div class="header-content">
             <div class="header-content-inner">
                 <h1 id="homeHeading">Wandering<br>Moons<br>Studio</h1>
-                <!-- <a href="#news" class="btn btn-primary btn-xl page-scroll">What's New</a> -->
+                <a id="btn-to-gallery" href="#gallery" class="btn btn-primary btn-xl page-scroll" style="margin-top: 30px">To Gallery</a>
             </div>
         </div>
     </header>
 
-    <section class="bg-dark" id="news">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <!--<h1 class="section-heading">Wandering Moons Studio</h1>-->
-                    <hr class="dark">
-                </div>
-            </div>
-        </div>
+    <!-- Gallery -->
+    <section class="bg-darkest">
+        <div class="container"  id="gallery">
+            <div class="col-lg-12 col-sm-12 text-center" style="margin-top: -60px;">
+                <div class="demo-gallery">
+                    <ul id="lightgallery" class="list-unstyled">
 
-        <!--
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-sm-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-home text-primary sr-icons"></i>
-                        <h3>Header 1</h3>
-                        <p class="text-muted">
-                        description
-                        </p>
-                    </div>
+                        <!-- Image 1 -->
+                        <li class="" data-responsive="img/photos/img_1-1440.jpg 1440" data-src="img/photos/img_1-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_1-1440.jpg" alt="Thumb-1">
+                            </a>
+                        </li>
+
+                        <!-- Image 2 -->
+                        <li class="" data-responsive="img/photos/img_2-1440.jpg 1440" data-src="img/photos/img_2-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_2-1440.jpg" alt="Thumb-2">
+                            </a>
+                        </li>
+
+                        <!-- Image 3 -->
+                        <li class="" data-responsive="img/photos/img_3-1440.jpg 1440" data-src="img/photos/img_3-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_3-1440.jpg" alt="Thumb-3">
+                            </a>
+                        </li>
+
+                        <!-- Image 4 -->
+                        <li class="" data-responsive="img/photos/img_4-1440.jpg 1440" data-src="img/photos/img_4-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_4-1440.jpg" alt="Thumb-4">
+                            </a>
+                        </li>
+
+                        <!-- Image 5 -->
+                        <li class="" data-responsive="img/photos/img_5-1440.jpg 1440" data-src="img/photos/img_5-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_5-1440.jpg" alt="Thumb-5">
+                            </a>
+                        </li>
+
+                        <!-- Image 6 -->
+                        <li class="" data-responsive="img/photos/img_6-1440.jpg 1440" data-src="img/photos/img_6-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_6-1440.jpg" alt="Thumb-6">
+                            </a>
+                        </li>
+
+                        <!-- Image 7 -->
+                        <li class="" data-responsive="img/photos/img_7-1440.jpg 1440" data-src="img/photos/img_7-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_7-1440.jpg" alt="Thumb-7">
+                            </a>
+                        </li>
+
+                        <!-- Image 8 -->
+                        <li class="" data-responsive="img/photos/img_8-1440.jpg 1440" data-src="img/photos/img_8-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_8-1440.jpg" alt="Thumb-8">
+                            </a>
+                        </li>
+
+                        <!-- Image 9 -->
+                        <li class="" data-responsive="img/photos/img_9-1440.jpg 1440" data-src="img/photos/img_9-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_9-1440.jpg" alt="Thumb-9">
+                            </a>
+                        </li>
+
+                        <!-- Image 10 -->
+                        <li class="" data-responsive="img/photos/img_10-1440.jpg 1440" data-src="img/photos/img_10-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_10-1440.jpg" alt="Thumb-10">
+                            </a>
+                        </li>
+
+                        <!-- Image 11 -->
+                        <li class="" data-responsive="img/photos/img_11-1440.jpg 1440" data-src="img/photos/img_11-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_11-1440.jpg" alt="Thumb-11">
+                            </a>
+                        </li>
+
+                        <!-- Image 12 -->
+                        <li class="" data-responsive="img/photos/img_12-1440.jpg 1440" data-src="img/photos/img_12-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_12-1440.jpg" alt="Thumb-12">
+                            </a>
+                        </li>
+
+                        <!-- Image 13 -->
+                        <li class="" data-responsive="img/photos/img_13-1440.jpg 1440" data-src="img/photos/img_13-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_13-1440.jpg" alt="Thumb-13">
+                            </a>
+                        </li>
+
+                        <!-- Image 14 -->
+                        <li class="" data-responsive="img/photos/img_14-1440.jpg 1440" data-src="img/photos/img_14-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_14-1440.jpg" alt="Thumb-14">
+                            </a>
+                        </li>
+
+                        <!-- Image 15 -->
+                        <li class="" data-responsive="img/photos/img_15-1440.jpg 1440" data-src="img/photos/img_15-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_15-1440.jpg" alt="Thumb-15">
+                            </a>
+                        </li>
+
+                        <!-- Image 16 -->
+                        <li class="" data-responsive="img/photos/img_16-1440.jpg 1440" data-src="img/photos/img_16-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_16-1440.jpg" alt="Thumb-16">
+                            </a>
+                        </li>
+
+                        <!-- Image 17 -->
+                        <li class="" data-responsive="img/photos/img_17-1440.jpg 1440" data-src="img/photos/img_17-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_17-1440.jpg" alt="Thumb-17">
+                            </a>
+                        </li>
+
+                        <!-- Image 18 -->
+                        <li class="" data-responsive="img/photos/img_18-1440.jpg 1440" data-src="img/photos/img_18-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_18-1440.jpg" alt="Thumb-18">
+                            </a>
+                        </li>
+
+                        <!-- Image 19 -->
+                        <li class="" data-responsive="img/photos/img_19-1440.jpg 1440" data-src="img/photos/img_19-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_19-1440.jpg" alt="Thumb-19">
+                            </a>
+                        </li>
+
+                        <!-- Image 20 -->
+                        <li class="" data-responsive="img/photos/img_20-1440.jpg 1440" data-src="img/photos/img_20-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_20-1440.jpg" alt="Thumb-20">
+                            </a>
+                        </li>
+
+                        <!-- Image 21 -->
+                        <li class="" data-responsive="img/photos/img_21-1440.jpg 1440" data-src="img/photos/img_21-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_21-1440.jpg" alt="Thumb-21">
+                            </a>
+                        </li>
+
+                        <!-- Image 22 -->
+                        <li class="" data-responsive="img/photos/img_22-1440.jpg 1440" data-src="img/photos/img_22-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_22-1440.jpg" alt="Thumb-22">
+                            </a>
+                        </li>
+
+                        <!-- Image 23 -->
+                        <li class="" data-responsive="img/photos/img_23-1440.jpg 1440" data-src="img/photos/img_23-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_23-1440.jpg" alt="Thumb-23">
+                            </a>
+                        </li>
+
+                        <!-- Image 24 -->
+                        <li class="" data-responsive="img/photos/img_24-1440.jpg 1440" data-src="img/photos/img_24-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_24-1440.jpg" alt="Thumb-24">
+                            </a>
+                        </li>
+
+                        <!-- Image 25 -->
+                        <li class="" data-responsive="img/photos/img_25-1440.jpg 1440" data-src="img/photos/img_25-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_25-1440.jpg" alt="Thumb-25">
+                            </a>
+                        </li>
+
+                        <!-- Image 26 -->
+                        <li class="" data-responsive="img/photos/img_26-1440.jpg 1440" data-src="img/photos/img_26-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_26-1440.jpg" alt="Thumb-26">
+                            </a>
+                        </li>
+
+                        <!-- Image 27 -->
+                        <li class="" data-responsive="img/photos/img_27-1440.jpg 1440" data-src="img/photos/img_27-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_27-1440.jpg" alt="Thumb-27">
+                            </a>
+                        </li>
+
+                        <!-- Image 28 -->
+                        <li class="" data-responsive="img/photos/img_28-1440.jpg 1440" data-src="img/photos/img_28-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_28-1440.jpg" alt="Thumb-28">
+                            </a>
+                        </li>
+
+                        <!-- Image 29 -->
+                        <li class="" data-responsive="img/photos/img_29-1440.jpg 1440" data-src="img/photos/img_29-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_29-1440.jpg" alt="Thumb-29">
+                            </a>
+                        </li>
+
+                        <!-- Image 30 -->
+                        <li class="" data-responsive="img/photos/img_30-1440.jpg 1440" data-src="img/photos/img_30-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_30-1440.jpg" alt="Thumb-30">
+                            </a>
+                        </li>
+
+                        <!-- Image 31 -->
+                        <li class="" data-responsive="img/photos/img_31-1440.jpg 1440" data-src="img/photos/img_31-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_31-1440.jpg" alt="Thumb-31">
+                            </a>
+                        </li>
+
+                        <!-- Image 32 -->
+                        <li class="" data-responsive="img/photos/img_32-1440.jpg 1440" data-src="img/photos/img_32-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_32-1440.jpg" alt="Thumb-32">
+                            </a>
+                        </li>
+
+                        <!-- Image 33 -->
+                        <li class="" data-responsive="img/photos/img_33-1440.jpg 1440" data-src="img/photos/img_33-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_33-1440.jpg" alt="Thumb-33">
+                            </a>
+                        </li>
+
+                        <!-- Image 34 -->
+                        <li class="" data-responsive="img/photos/img_34-1440.jpg 1440" data-src="img/photos/img_34-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_34-1440.jpg" alt="Thumb-34">
+                            </a>
+                        </li>
+
+                        <!-- Image 35 -->
+                        <li class="" data-responsive="img/photos/img_35-1440.jpg 1440" data-src="img/photos/img_35-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_35-1440.jpg" alt="Thumb-35">
+                            </a>
+                        </li>
+
+                        <!-- Image 36 -->
+                        <li class="" data-responsive="img/photos/img_36-1440.jpg 1440" data-src="img/photos/img_36-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_36-1440.jpg" alt="Thumb-36">
+                            </a>
+                        </li>
+
+                        <!-- Image 37 -->
+                        <li class="" data-responsive="img/photos/img_37-1440.jpg 1440" data-src="img/photos/img_37-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_37-1440.jpg" alt="Thumb-37">
+                            </a>
+                        </li>
+
+                        <!-- Image 38 -->
+                        <li class="" data-responsive="img/photos/img_38-1440.jpg 1440" data-src="img/photos/img_38-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_38-1440.jpg" alt="Thumb-38">
+                            </a>
+                        </li>
+
+                        <!-- Image 39 -->
+                        <li class="" data-responsive="img/photos/img_39-1440.jpg 1440" data-src="img/photos/img_39-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_39-1440.jpg" alt="Thumb-39">
+                            </a>
+                        </li>
+
+                        <!-- Image 40 -->
+                        <li class="" data-responsive="img/photos/img_40-1440.jpg 1440" data-src="img/photos/img_40-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_40-1440.jpg" alt="Thumb-40">
+                            </a>
+                        </li>
+
+                        <!-- Image 41 -->
+                        <li class="" data-responsive="img/photos/img_41-1440.jpg 1440" data-src="img/photos/img_41-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_41-1440.jpg" alt="Thumb-41">
+                            </a>
+                        </li>
+
+                        <!-- Image 42 -->
+                        <li class="" data-responsive="img/photos/img_42-1440.jpg 1440" data-src="img/photos/img_42-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_42-1440.jpg" alt="Thumb-42">
+                            </a>
+                        </li>
+
+                        <!-- Image 43 -->
+                        <li class="" data-responsive="img/photos/img_43-1440.jpg 1440" data-src="img/photos/img_43-1440.jpg">
+                            <a href="">
+                                <img class="img-responsive" src="img/photos/img_43-1440.jpg" alt="Thumb-43">
+                            </a>
+                        </li>
+
+                    </ul>
                 </div>
-                <div class="col-lg-6 col-sm-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-                        <h3>Header 2</h3>
-                        <p class="text-muted">description</p>
-                    </div>
-                </div>            
-            </div>
-        </div>
-        -->
+            </div>        
+        </div>        
     </section>
-
+    
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
+                <div class="col-sm-4"></div>
                 <div class="col-sm-4">
-                    <span class="copyright">Copyright &copy; Wandering Moons Studio</span>
-                </div>
-                <div class="col-sm-4">
+                    <h5 style="color:white;">Photos by<br><a href="http://shanemoon.com"> SHANE MOON</a></h5>
+                    <!--
                     <ul class="list-inline social-buttons">
                         <li class="list-inline-item">
                             <a href="#">
@@ -104,7 +430,6 @@
                                 <i class="fa fa-facebook"></i>
                             </a>
                         </li>
-                        <!--
                         <li class="list-inline-item">
                             <a href="#">
                                 <img src="#" alt="logo" style="width:30px">
@@ -130,8 +455,7 @@
 
     <!-- Return to Top Button -->
     <a href="javascript:" id="scroll-top"><i class="fa fa-4x fa-chevron-up"></i></a>
-    
-    
+
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 
@@ -146,6 +470,18 @@
     <!-- Theme JavaScript -->
     <script src="js/creative.js"></script>
 
-</body>
+    <!-- Light Gallery -->
+    <script src="vendor/lightgallery/js/picturefill.min.js"></script>
+    <script src="vendor/lightgallery/js/lightgallery.js"></script>
+    <script src="vendor/lightgallery/js/lg-pager.js"></script>
+    <script src="vendor/lightgallery/js/lg-autoplay.js"></script>
+    <script src="vendor/lightgallery/js/lg-fullscreen.js"></script>
+    <script src="vendor/lightgallery/js/lg-zoom.js"></script>
+    <script src="vendor/lightgallery/js/lg-hash.js"></script>
+    <script src="vendor/lightgallery/js/lg-share.js"></script>
+    <script>
+        lightGallery(document.getElementById('lightgallery'));
+    </script>
 
+</body>
 </html>
